@@ -1,6 +1,6 @@
 # Sketch_2_image
 
-## installation
+## Installation
 
 1. **clone the repository**:
    ```bash
