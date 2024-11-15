@@ -1,4 +1,4 @@
-# Sketch_2_image 🌟
+# Sketch_2_Image 🌟
 
 A deep learning project to transform sketch images into realistic images using the Pix2Pix model. This project is based on the Pix2Pix GAN architecture and uses the `pytorch-CycleGAN-and-pix2pix` framework for training and testing.
 
