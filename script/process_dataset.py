@@ -126,10 +126,10 @@ def move_dataset_to_pytorch_folder(dataset_folder, pytorch_folder):
 
 # Main function to execute all tasks
 if __name__ == "__main__":
-    base_folder = r'C:\Users\pytorch\Desktop\pix_to_pix'
-    pytorch_folder = r'C:\Users\pytorch\Desktop\pix_to_pix\pytorch-CycleGAN-and-pix2pix'
-    real_images_folder = os.path.join(base_folder, 'bedroom_dataset_resized')
-    sketch_images_folder = os.path.join(base_folder, 'bedroom_dataset_resized_Sketch')
+    base_folder = r'C:\Users\pytorch\Desktop\Sketch_2_iamge'
+    pytorch_folder = r'C:\Users\pytorch\Desktop\Sketch_2_iamge\dataset\pytorch-CycleGAN-and-pix2pix'
+    real_images_folder = os.path.join(base_folder, 'dataset')
+    sketch_images_folder = os.path.join(base_folder, 'dataset_Sketch')
     pix2pix_dataset_folder = os.path.join(base_folder, 'dataset_for_pix2pix')
     combined_dataset_folder = os.path.join(base_folder, 'dataset_AB')
 
