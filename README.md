@@ -18,7 +18,7 @@ Sketch2Image is an end-to-end computer vision project that translates hand-drawn
 ## Architecture (Mermaid)
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Raw Image Dataset<br/>dataset/class_x/*.jpg] --> B[Data Prep CLI<br/>script/process_dataset.py]
     B --> C[Sketch Dataset<br/>dataset_sketch]
     B --> D[Pix2Pix A/B Splits<br/>dataset_for_pix2pix/A,B]
