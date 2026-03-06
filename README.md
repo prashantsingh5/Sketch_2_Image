@@ -15,6 +15,31 @@ Sketch2Image is an end-to-end computer vision project that translates hand-drawn
 - Works in both full-dataset mode and single before/after image mode.
 - CI checks, security policy, contribution guide, and citation metadata included.
 
+## Architecture (Mermaid)
+
+```mermaid
+flowchart LR
+    A[Raw Image Dataset<br/>dataset/class_x/*.jpg] --> B[Data Prep CLI<br/>script/process_dataset.py]
+    B --> C[Sketch Dataset<br/>dataset_sketch]
+    B --> D[Pix2Pix A/B Splits<br/>dataset_for_pix2pix/A,B]
+    D --> E[AB Concatenated Dataset<br/>dataset_ab]
+    E --> F[Pix2Pix Dataset Registry<br/>pytorch-CycleGAN-and-pix2pix/datasets/sketch2image]
+
+    F --> G[Model Training<br/>sketch2image_model_train.ipynb]
+    G --> H[Trained Checkpoints]
+    H --> I[Inference Script<br/>pix2pix test pipeline]
+    I --> J[Generated Images<br/>output_images]
+
+    J --> K[Metrics Engine<br/>script/evaluate_metrics.py]
+    F --> K
+    K --> L[Metrics JSON<br/>metrics/latest_metrics.json]
+    L --> M[Benchmark Updater<br/>script/update_benchmark_table.py]
+    M --> N[README Benchmark Table]
+
+    J --> O[Streamlit Demo<br/>demo/app.py]
+    C --> O
+```
+
 ## Quick Start (Fastest Path)
 
 ### 1) Install
