@@ -1,0 +1,33 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+
+# Virtual env
+.venv/
+venv/
+env/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data artifacts
+output_images/
+dataset/
+dataset_sketch/
+dataset_for_pix2pix/
+dataset_ab/
+
+# Model artifacts
+checkpoints/
+results/
+logs/
+*.pth
+*.pt
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/

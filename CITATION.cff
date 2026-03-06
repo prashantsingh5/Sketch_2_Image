@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: "Sketch2Image"
+message: "If you use this project, please cite it using this metadata."
+type: software
+authors:
+  - family-names: Singh
+    given-names: Prashant
+    email: prashantsingha96@gmail.com
+repository-code: "https://github.com/prashantsingh5/Sketch_2_image"
+license: MIT
+abstract: "End-to-end sketch-to-photoreal translation pipeline using Pix2Pix with reproducible data prep, evaluation, and interactive demo tooling."
+keywords:
+  - pix2pix
+  - gan
+  - image-to-image
+  - computer-vision
+  - pytorch
