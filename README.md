@@ -136,11 +136,13 @@ Metric interpretation:
 
 ## Benchmark Table
 
+Estimated placeholder values below are for presentation only (not measured runs).
+
 | Experiment | Dataset Split | FID ↓ | LPIPS ↓ | SSIM ↑ | Notes |
 |---|---|---:|---:|---:|---|
-| Baseline Pix2Pix (default config) | val | TBD | TBD | TBD | Run `script/run_full_eval.py` in dataset mode |
-| Single Pair Smoke Test | test | TBD | TBD | TBD | Run `script/run_full_eval.py` in single-pair mode |
-| Tuned Run (example) | val | TBD | TBD | TBD | Add hyperparameter notes |
+| Baseline Pix2Pix (default config) | val | 78.40 | 0.3210 | 0.6200 | Estimated placeholder (not measured) |
+| Single Pair Smoke Test | test | 41.20 | 0.1840 | 0.7100 | Estimated placeholder (single-pair, not statistically reliable) |
+| Tuned Run (example) | val | 61.70 | 0.2760 | 0.6600 | Estimated placeholder for expected tuned improvement |
 
 ## Example Result
 
